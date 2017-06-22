@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="import" href="/modal1.html">
+
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+      <a href="#home" class="w3-bar-item w3-button"><b>TW</b> Company</a> 
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding w3-hover-grey"  href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+ 	  <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button ">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      </div>
+  </div>
+  
+  <div id="navMenu" class="w3-bar-block w3-margin-top w3-right w3-padding w3-hide w3-white w3-hide-large w3-medium w3-wide">
+  	<a href="#projects" class="w3-bar-item w3-button">Projects1</a>
+  	<a href="#about" class="w3-bar-item w3-button" >About</a>
+  	<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div>
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="image/architect.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>TW</b></span> <span class="w3-hide-small w3-text-light-grey">Company</span></h1>
+  </div>
+</header>
+ 
+
+
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  </div>
+
+<div class="w3-content w3-display-container" height="100">
+  <img class="mySlides" src="image/house2 (1).jpg" style="width:100%">
+  <img class="mySlides" src="image/house3 (1).jpg" style="width:100%">
+  <img class="mySlides" src="image/house4 (1).jpg" style="width:100%">
+  <img class="mySlides" src="image/house5 (1).jpg" style="width:100%">
+  <img class="mySlides" src="image/house2.jpg" style="width:100%">
+  <img class="mySlides" src="image/house3.jpg" style="width:100%">
+  <img class="mySlides" src="image/house4.jpg" style="width:100%">
+  <img class="mySlides" src="image/house5.jpg" style="width:100%">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+  <div  class="w3-row-padding w3-grayscale">
+    <div id="id1" class="w3-col l3 m6 w3-margin-bottom">
+      <img src="image/team2.jpg" alt="John" style="width:100%">
+      <h3>Jo SungHoo</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="modal(this)">Contact</button></p>
+    </div>
+    <div id="id2"  class="w3-col l3 m6 w3-margin-bottom">
+      <img src="image/team1.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="modal(this)">Contact</button></p>
+    </div>
+    <div id="id3" class="w3-col l3 m6 w3-margin-bottom">
+      <img src="image/team3.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="modal(this)">Contact</button></p>
+    </div>
+    <div id="id4" class="w3-col l3 m6 w3-margin-bottom">
+      <img src="image/team4.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block" onclick="modal(this)">Contact</button></p>
+    </div>
+  </div>
+
+  
+</div>
+
+  
+<div id="container" ></div>
+  
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <span class="w3-hover-text-green" style="text-decoration:underline">w3.css</span></p>
+</footer>
+
+<script>
+
+function myFunction() {
+    var x = document.getElementById("navMenu");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+ function modal(me){
+	var link = document.querySelector('link[rel="import"]');
+	var z = "#" + me.parentNode.parentNode.getAttribute('id');
+	var x = "0" + z.charAt(3);
+	var modalId = z.replace(z.charAt(3), x);
+	var c = Math.ceil(Array.prototype.indexOf.call(me.parentNode.parentNode.parentNode.childNodes,me.parentNode.parentNode)/2)-1;
+	console.log(c);
+    // import에서 <template>를 복제합니다.
+    var template = link.import.querySelector(modalId);
+    var clone = document.importNode(template, true);
+    document.querySelector('#container').appendChild(clone);
+	document.getElementById('container').childNodes[c].style.display="block";
+	} 
+</script>
+</body>
+</html>
