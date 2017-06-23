@@ -16,18 +16,18 @@
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
       <a href="#home" class="w3-bar-item w3-button"><b>TW</b> Company</a> 
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding w3-hover-grey"  href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding w3-hover-grey"   href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a>
  	  <div class="w3-right w3-hide-small">
       <a href="#projects" class="w3-bar-item w3-button ">Projects</a>
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#about"  class="w3-bar-item w3-button">About</a>
+      <a href="#contact"  class="w3-bar-item w3-button">Contact</a>
       </div>
   </div>
   
-  <div id="navMenu" class="w3-bar-block w3-margin-top w3-right w3-padding w3-hide w3-white w3-hide-large w3-medium w3-wide">
-  	<a href="#projects" class="w3-bar-item w3-button">Projects1</a>
-  	<a href="#about" class="w3-bar-item w3-button" >About</a>
-  	<a href="#contact" class="w3-bar-item w3-button">Contact</a>
+  <div id="navMenu" class="w3-bar-block w3-margin-top w3-right w3-padding w3-hide w3-white w3-hide-large w3-hide-medium w3-wide">
+  	<a href="#projects" onclick="closeMenu()" class="w3-bar-item w3-button">Projects1</a>
+  	<a href="#about" onclick="closeMenu()" class="w3-bar-item w3-button" >About</a>
+  	<a href="#contact" onclick="closeMenu()" class="w3-bar-item w3-button">Contact</a>
   </div>
 </div>
 
@@ -157,6 +157,13 @@ function showDivs(n) {
  function closez(me){
 	 document.getElementById(me.parentNode.parentNode.parentNode.getAttribute('id')).style.display='none'
 	container.removeChild(document.getElementById(me.parentNode.parentNode.parentNode.getAttribute('id')));
+ }
+ 
+ function closeMenu(){
+	 console.log("z");
+	 var x = document.getElementById("navMenu");
+	 
+	 x.className = x.className.replace(" w3-show","");
  }
 </script>
 </body>
